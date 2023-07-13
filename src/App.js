@@ -1,10 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import Modal from './Components/Modal/Modal';
+import ModalDylan from './Components/Modal/ModalDylan';
+import TestModal from './Components/TestModal/TestModal';
 
 function App() {
   return (
     <div className="App">
+      <TestModal />
     </div>
   );
 }
