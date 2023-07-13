@@ -21,7 +21,7 @@ export default function Modal({children, formIsSuccess= true, onClose=()=>{},onC
   return (
     <div className='modal-container'>
       <div className='modal-content'>
-        aaaa
+        <p>{children}
         <div className='modal-content__ctas'>
           <button className='btn--plain btn--green' onClick={handleClose}>Retourner au tableau</button>
           <button className='btn--plain btn--green' onClick={resetForm}>Ajouter un nouvel employé</button>

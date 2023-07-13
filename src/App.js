@@ -1,5 +1,5 @@
 import './App.css';
-import RenderModal from './Components/RenderModal/TestModal';
+import RenderModal from './Components/RenderModal/RenderModal';
 function App() {
   return (
     <div className="App">
