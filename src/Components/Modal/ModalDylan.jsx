@@ -1,12 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Modal.css'
 
-export default function Modal(
-  {children, 
-  formIsSuccess= true, 
-  onClose=()=>{},
-  onClick=()=>{}}
-) {
+export default function Modal({children, formIsSuccess= true, onClose=()=>{},onClick=()=>{}}) {
   const [modalIsOpen, setModalIsOpen] = useState(formIsSuccess)
 
   useEffect(()=> {
