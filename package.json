@@ -4,7 +4,8 @@
   "private": false,
   "babel": {
     "presets": [
-      "@babel/preset-react"
+      "@babel/preset-react",
+      "@babel/plugin-syntax-jsx"
     ]
   },
   "dependencies": {
@@ -36,6 +37,7 @@
   ],
   "devDependencies": {
     "@babel/cli": "^7.22.9",
+    "@babel/plugin-syntax-jsx": "^7.22.5",
     "@babel/preset-react": "^7.22.5"
   }
 }
