@@ -2,10 +2,10 @@
   "name": "modal-react-dylan",
   "version": "0.1.0",
   "private": false,
-  "babel": { 
-  "presets": [ 
-    "@babel/preset-react" 
-  ] 
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -35,7 +35,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "@babel/cli": "^7.22.6",
+    "@babel/cli": "^7.22.9",
     "@babel/preset-react": "^7.22.5"
   }
 }
