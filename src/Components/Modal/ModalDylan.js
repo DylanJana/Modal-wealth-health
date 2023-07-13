@@ -18,15 +18,18 @@ export default function Modal({children, formIsSuccess= true, onClose=()=>{},onC
   const resetForm = () => {
     onClick()
   }
-  return (
+  const modal = (
     <div className='modal-container'>
       <div className='modal-content'>
-        <p>{children}
+        <p>{children}</p>
         <div className='modal-content__ctas'>
           <button className='btn--plain btn--green' onClick={handleClose}>Retourner au tableau</button>
           <button className='btn--plain btn--green' onClick={resetForm}>Ajouter un nouvel employé</button>
         </div>
       </div>
     </div>
+  )
+  return (
+    modal && modalIsOpen
   )
 }
