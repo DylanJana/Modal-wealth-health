@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
 import './Modal.css'
 
-export default function Modal({children, formIsSuccess= true, onClose=()=>{},onClick=()=>{}}) {
-  const [modalIsOpen, setModalIsOpen] = useState(formIsSuccess)
+export default function Modal({children, isSuccesModalOpen= true, onClose=()=>{},onClick=()=>{}}) {
+  const [modalIsOpen, setModalIsOpen] = useState(isSuccesModalOpen)
 
   useEffect(()=> {
-    setModalIsOpen(formIsSuccess)
+    setModalIsOpen(isSuccesModalOpen)
     let body = document.querySelector('body')
-    formIsSuccess === true ? body.classList.add('no--scroll') : body.classList.remove('no--scroll') 
-  }, [formIsSuccess])
+    isSuccesModalOpen === true ? body.classList.add('no--scroll') : body.classList.remove('no--scroll') 
+  }, [isSuccesModalOpen])
 
   const handleClose = () => {
     setModalIsOpen(false)
