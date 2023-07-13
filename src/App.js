@@ -1,10 +1,9 @@
 import './App.css';
-import TestModal from './Components/TestModal/TestModal';
-
+import RenderModal from './Components/RenderModal/TestModal';
 function App() {
   return (
     <div className="App">
-      <TestModal />
+      <RenderModal />
     </div>
   );
 }
