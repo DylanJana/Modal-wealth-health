@@ -18,8 +18,7 @@ export default function Modal({children, formIsSuccess= true, onClose=()=>{},onC
   const resetForm = () => {
     onClick()
   }
-
-  const modal = (
+  return (
     <div className='modal-container'>
       <div className='modal-content'>
         <p>{children}</p>
@@ -29,8 +28,5 @@ export default function Modal({children, formIsSuccess= true, onClose=()=>{},onC
         </div>
       </div>
     </div>
-  )
-  return (
-    modal & modalIsOpen
   )
 }
